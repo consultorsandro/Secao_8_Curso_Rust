@@ -1,16 +1,28 @@
 fn main() {
-//Class 136
+    // Class 138
+    let values = [4, 8, 15, 16, 23, 42];
+
+    let regular_reference = &values;
+    print_length(regular_reference);
+
+    let slice_of_three = &values[0..3];
+    print_length(slice_of_three);
+
+
+}
+fn print_length(reference: &[i32]) {
+    println!("{}", reference.len());
+}
+
+/* Class 136
 let action_hero = String::from("Michel Gibson");
 do_hero_stuff(&action_hero);
 let another_action_hero = "Silvester Stallone";
 do_hero_stuff(another_action_hero);
-
-
-}
 // Functions outside of main
 fn do_hero_stuff(hero_name: &str) { // Preferir o &str para strings
     println!("{} saves the day", hero_name);
-}
+}*/
 /*
     // Class 135
     let action_hero = String::from("Silvester Stallone");
