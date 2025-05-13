@@ -1,4 +1,17 @@
 fn main() {
+//Class 136
+let action_hero = String::from("Michel Gibson");
+do_hero_stuff(&action_hero);
+let another_action_hero = "Silvester Stallone";
+do_hero_stuff(another_action_hero);
+
+
+}
+// Functions outside of main
+fn do_hero_stuff(hero_name: &str) { // Preferir o &str para strings
+    println!("{} saves the day", hero_name);
+}
+/*
     // Class 135
     let action_hero = String::from("Silvester Stallone");
 
@@ -11,6 +24,7 @@ fn main() {
     let full_name: &str = &action_hero[..]; // considera do início até o final
     println!("His full name is: {}", full_name);
 }
+*/
 /*
     // Class 134
     let food = "🍕";
