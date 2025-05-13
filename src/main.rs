@@ -1,10 +1,7 @@
 fn main() {
     // Class 133
-    let first_name = {
-        let action_hero = "Silvester Stallone";
-        &action_hero[0..9]
-    };
-    println!("{}", first_name);
+    let food = "🍕";
+    println!("{}", food.len());
 }
 /*
     // Class 133
